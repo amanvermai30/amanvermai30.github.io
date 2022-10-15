@@ -6,11 +6,14 @@
 }
 
 :root {
-    --main-bg: ;
+    --main-bg: #1d1d1d;
+    --white: white;
 }
 
 
-
+body {
+    background-color: var(--main-bg);
+}
 
 
 
@@ -32,16 +35,20 @@
     border: 1px solid black;
 }
 
-
-/* .mobile__nav--hidden {
+/* 
+.mobile__nav--hidden {
     display: none;
-} */
-
+}
+*/
 
 .big__nav--hidden {
     display: none;
 }
 
+
+.fa-bars {
+    color: var(--white);
+}
 
 /* do more work on img - do photshop */
 #amanImg {
@@ -58,10 +65,29 @@
 }
 
 .hero__intro>p {
+    color: var(--white);
     font-weight: 700;
 }
 
 /* Hero Section */
 .hero--section {
     padding: 1em;
+}
+
+.hero__btn {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    margin-top: 2em;
+
+}
+
+.hero__section--btn {
+    border: none;
+    max-width: 150px;
+    padding: .5em 1em;
+    margin: 1em 0;
+    background-color: #545fc4;
+    color: var(--white);
 }
