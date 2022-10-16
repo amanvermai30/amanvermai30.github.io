@@ -13,7 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Aman Verma | Front End Developer</title>
 </head>
 
@@ -51,6 +51,7 @@
     </menu>
 
     <section class="hero--section">
+        <!-- incomplete-->
         <div class="hero__intro">
             <p>Hi, 🙋‍♂️</p>
             <p>I'm <span><img src="./assets/Aman-white.png" class="signature__img"
@@ -67,8 +68,8 @@
 
 
 
-    <section class="section__two">
-        <h2 class="section__two--heading">My Awesome Portfolio</h2>
+    <section class="section__portfolio">
+        <h2 class="section__portfolio--heading">My Awesome Portfolio</h2>
         <p>A small gallery of recent projects chosen by me.
             I've done them all together with amazing people from companies around the
             globe. It's only a drop in the ocean compared to the entire list.</p>
@@ -77,17 +78,123 @@
 
         <div class="app__portfolio">
             <div class="app__portfolio--list">
-                <img src="./assets/Screenshot 2022-10-15 155221.jpg" alt="firstpost">
+                <img src="./assets/Screenshot 2022-10-15 155221.jpg"
+                    class="app__portfolio--img" alt="firstpost">
                 <h3>Project Name</h3>
                 <p>Mini Details</p>
+
+                <div class="app__portfolio--view">
+                    <!-- make it relative -->
+                    <a href=""><i class="fa-regular fa-eye"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+
+            <div class="app__portfolio--list">
+                <img src="./assets/Screenshot 2022-10-15 155221.jpg"
+                    class="app__portfolio--img" alt="firstpost">
+                <h3>Project Name</h3>
+                <p>Mini Details</p>
+
+                <div class="app__portfolio--view">
+                    <!-- make it relative -->
+                    <a href=""><i class="fa-regular fa-eye"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </div>
             </div>
         </div>
-
-
-
     </section>
 
 
+
+
+
+    <section class="section__about">
+        <div class="about--myself">
+            <h1>It's Me</h1>
+            <div class="line"></div><!-- a solid line -->
+            <h1>Bring your business life with Me</h1>
+            <p>I'm a Full Stack Web Developer with hands-on experience in designing,
+                developing, and maintaining projects. Adept at learning, unlearning,
+                and relearning. Demonstrate the capability of managing clean, elegant,
+                and efficient code. Highly skilled in collaboration, decision-making,
+                and Data Structures & Algorithms. I'm still enthusiastically grabbing
+                on to multiple programming languages, frameworks, and principles that
+                I can add to my skillset.</p>
+        </div>
+
+
+        <div class="about--skill&ex">
+            <h2>Skills & Experience</h2>
+            <div class="about--container">
+                <div class="about--skillicon">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-square-js"></i>
+                    <i class="fa-brands fa-node"></i>
+                    <i class="fa-brands fa-git-alt"></i>
+                    <i class="fa-brands fa-java"></i>
+                </div>
+
+                <div class="about__studies--lists">
+                    <div class="studies--list">
+                        <div>
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <div>
+                                <h2>Bachlore's Art</h2>
+                                <p>2020</p>
+                            </div>
+                        </div>
+                        <p>Prayagrag University</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="about--hobbies">
+            <h1>My Hobbies</h1>
+            <p>These are some of the hobbies which I offer as services. Reach out to
+                me if I can help you with any!</p>
+            <div class="hobbies--lists">
+                <div class="hobbies--item">
+                    <i></i>
+                    <h3></h3>
+                </div>
+
+                <div class="hobbies--item">
+                    <i></i>
+                    <h3></h3>
+                </div>
+
+                <div class="hobbies--item">
+                    <i></i>
+                    <h3></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__contact">
+        <h1>Contact Me</h1>
+
+        <div class="contact__form">
+            <form action="submit">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Subject">
+                <textarea name="msg" id="massage" cols="30" rows="10"></textarea>
+            </form>
+            <button class="btn submit">Send Message</button>
+        </div>
+    </section>
+
+
+    <footer>
+        <!-- demo navigation -->
+    </footer>
 
 
     <script src="index.js"></script>
