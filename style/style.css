@@ -7,7 +7,17 @@
 
 :root {
     --main-bg: #1d1d1d;
+    --bs-secondary: #6c757d;
     --white: white;
+
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-cyan: #0dcaf0;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
 }
 
 
@@ -90,4 +100,108 @@ body {
     margin: 1em 0;
     background-color: #545fc4;
     color: var(--white);
+}
+
+
+
+/* Portfolio section */
+
+.section__portfolio {
+    border: 1px solid red;
+}
+
+.section__portfolio--heading {
+    color: var(--bs-cyan);
+    margin-bottom: 1em;
+}
+
+.section__portfolio>p {
+    color: var(--white);
+    font-size: .7em;
+    padding-top: 1em;
+}
+
+
+/* Portfolio list content */
+.app__portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin-top: 2em;
+}
+
+.app__portfolio--list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    padding-top: 1em;
+}
+
+.app__portfolio--list>h3 {
+    font-size: 1em;
+    color: var(--white);
+}
+
+
+
+
+.app__portfolio--list>p {
+    font-size: .7em;
+    color: var(--bs-gray-500);
+}
+
+
+
+.fa-github,
+.fa-eye {
+    color: var(--white);
+}
+
+.app__portfolio--img {
+    width: 80%;
+}
+
+.app__portfolio--view {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 5em;
+    width: 50%;
+    top: 28%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.app__portfolio--view>a {
+    background-color: var(--main-bg);
+    padding: .5em;
+    border-radius: 50%;
+    opacity: 0.75;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+@media screen and (min-width: 300px) {
+    .app__portfolio--view {
+        top: 34%;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .app__portfolio--view {
+        top: 40%;
+    }
 }
