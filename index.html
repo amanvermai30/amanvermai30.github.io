@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/583f110147.js"
+    <script defer src="https://kit.fontawesome.com/583f110147.js"
         crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,29 +50,35 @@
         </div>
     </menu>
 
-    <section class="hero--section">
+    <section class="hero--section-section">
         <!-- incomplete-->
-        <div class="hero__intro">
+        <!-- <div class="hero__intro">
             <p>Hi, 🙋‍♂️</p>
+            <p>How you doing!</p>
             <p>I'm <span><img src="./assets/Aman-white.png" class="signature__img"
                         alt=""></span>,</p>
-            <p>Web Developer</p>
+            <p>Web Developer</p> -->
+            <h2 class="text">Hi,I'm <span class="multitext"></span> </h2>
         </div>
 
         <div class="hero__btn">
-            <button class="hero__section--btn">Resume <i
-                    class="fa-solid fa-file-arrow-down"></i></button>
+                   <a href="./assets/Aman-verma-cv.pdf" download="Aman-verma-cv"
+                    class="download-btn">Resume <i
+                    class="fa-solid fa-file-arrow-down"></i></a>        
             <button class="hero__section--btn" id="#">Contact Me!</button>
         </div>
     </section>
 
 
 
-    <section class="section__portfolio">
+    <section class="section__portfolio section">
+        <h1 class="slogan">Bring your business live with Me</h1>
+        <div class="slogan__line"></div>
         <h2 class="section__portfolio--heading">My Awesome Portfolio</h2>
-        <p>A small gallery of recent projects chosen by me.
-            I've done them all together with amazing people from companies around the
-            globe. It's only a drop in the ocean compared to the entire list.</p>
+        <p>A small gallery of recent projects chosen by me. I've done them all together
+            with amazing people from companies around the globe. It's only a drop in the
+            ocean compared to the entire list.
+        </p>
 
         <p>The following projects are created my using HTML, CSS, JavaScript</p>
 
@@ -83,7 +89,7 @@
                 <h3>Project Name</h3>
                 <p>Mini Details</p>
 
-                <div class="app__portfolio--view">
+                <div class="app__portfolio--view hidden">
                     <!-- make it relative -->
                     <a href=""><i class="fa-regular fa-eye"></i></a>
                     <a href=""><i class="fa-brands fa-github"></i></a>
@@ -97,7 +103,7 @@
                 <h3>Project Name</h3>
                 <p>Mini Details</p>
 
-                <div class="app__portfolio--view">
+                <div class="app__portfolio--view hidden">
                     <!-- make it relative -->
                     <a href=""><i class="fa-regular fa-eye"></i></a>
                     <a href=""><i class="fa-brands fa-github"></i></a>
@@ -110,11 +116,10 @@
 
 
 
-    <section class="section__about">
+    <section class="section__about section">
         <div class="about--myself">
             <h1>It's Me</h1>
             <div class="line"></div><!-- a solid line -->
-            <h1>Bring your business life with Me</h1>
             <p>I'm a Full Stack Web Developer with hands-on experience in designing,
                 developing, and maintaining projects. Adept at learning, unlearning,
                 and relearning. Demonstrate the capability of managing clean, elegant,
@@ -125,28 +130,56 @@
         </div>
 
 
-        <div class="about--skill&ex">
+        <div class="about--skillex">
             <h2>Skills & Experience</h2>
             <div class="about--container">
                 <div class="about--skillicon">
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <i class="fa-brands fa-square-js"></i>
-                    <i class="fa-brands fa-node"></i>
-                    <i class="fa-brands fa-git-alt"></i>
-                    <i class="fa-brands fa-java"></i>
+                    <i class="fa-brands fa-html5 fa-4x"></i>
+                    <i class="fa-brands fa-css3-alt fa-4x"></i>
+                    <i class="fa-brands fa-square-js fa-4x"></i>
+                    <i class="fa-brands fa-node fa-4x"></i>
+                    <i class="fa-brands fa-git-alt fa-4x"></i>
+                    <i class="fa-brands fa-java fa-4x"></i>
                 </div>
 
                 <div class="about__studies--lists">
                     <div class="studies--list">
-                        <div>
-                            <i class="fa-solid fa-graduation-cap"></i>
-                            <div>
-                                <h2>Bachlore's Art</h2>
+                        <div class="studies__list--header">
+                            <div class="studies__list--headericon">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <div class="studies__list--headerdata">
+                                <h3>Bachlore's Art</h3>
                                 <p>2020</p>
                             </div>
                         </div>
-                        <p>Prayagrag University</p>
+                        <p>Prayagraj University</p>
+                    </div>
+
+                    <div class="studies--list">
+                        <div class="studies__list--header">
+                            <div class="studies__list--headericon">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <div class="studies__list--headerdata">
+                                <h3>Bachlore's Art</h3>
+                                <p>2020</p>
+                            </div>
+                        </div>
+                        <p>Prayagraj University</p>
+                    </div>
+
+                    <div class="studies--list">
+                        <div class="studies__list--header">
+                            <div class="studies__list--headericon">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <div class="studies__list--headerdata">
+                                <h3>Bachlore's Art</h3>
+                                <p>2020</p>
+                            </div>
+                        </div>
+                        <p>Prayagraj University</p>
                     </div>
                 </div>
             </div>
@@ -156,8 +189,8 @@
 
         <div class="about--hobbies">
             <h1>My Hobbies</h1>
-            <p>These are some of the hobbies which I offer as services. Reach out to
-                me if I can help you with any!</p>
+            <p>These are some of the hobbies which I offer as services. Reach out to me if
+                I can help you with any!</p>
             <div class="hobbies--lists">
                 <div class="hobbies--item">
                     <i></i>
@@ -177,15 +210,18 @@
         </div>
     </section>
 
-    <section class="section__contact">
+    <section class="section__contact section">
         <h1>Contact Me</h1>
-
+        <p>I’m interested in freelance opportunities – especially ambitious or large
+            projects. However, if you have other request or question, don’t hesitate to
+            use the form.</p>
         <div class="contact__form">
-            <form action="submit">
+            <form action="submit" class="main__contact">
                 <input type="text" placeholder="Name">
                 <input type="email" placeholder="Email">
                 <input type="text" placeholder="Subject">
-                <textarea name="msg" id="massage" cols="30" rows="10"></textarea>
+                <textarea name="msg" id="massage" cols="40" placeholder="Massage"
+                    spellcheck="false"></textarea>
             </form>
             <button class="btn submit">Send Message</button>
         </div>
@@ -198,6 +234,22 @@
 
 
     <script src="./script/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </body>
 
 </html>
+
+<script>
+    
+    // multi text effect //
+const typingEffect = new Typed(".multitext",{
+    strings : ["Coder","Developer","Backend Developer"],
+    loop : true,
+    typeSpeed : 100,
+    backSpeed : 80,
+    startDelay : 1000,
+    backDelay : 1500,
+
+})
+
+</script>
