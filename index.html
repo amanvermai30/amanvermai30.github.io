@@ -14,242 +14,249 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="./style/style.css">
+
+    <script defer src="./script/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <title>Aman Verma | Front End Developer</title>
 </head>
 
 <body>
-
-    <menu>
-        <div class="main-navbar">
-            <div class="mobile-nav mobile__nav--hidden">
-                <img src="./assets/Aman-white.png" class="signature__img"
-                    alt="aman-signature">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-
-            <div class="nav-big big__nav--hidden">
-                <div>
-                    <img id="amanImg" src="./assets/Aman Orange.jpg" alt="aman">
-                </div>
-
-                <nav class="nav">
-                    <ul class="nav__links">
-                        <li class="nav__link"><a href="#">About</a></li>
-                        <li class="nav__link"><a href="#">My Skill</a></li>
-                        <li class="nav__link"><a href="#">Work</a></li>
-                        <li class="nav__link"><a href="#">Contact</a></li>
-                        <li class="nav__link"><a href="#">Blog</a></li>
-                    </ul>
-                </nav>
-                <div class="social-icon">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </div>
-            </div>
-        </div>
-    </menu>
-
-    <section class="hero--section-section">
-        <!-- incomplete-->
-        <!-- <div class="hero__intro">
-            <p>Hi, 🙋‍♂️</p>
-            <p>How you doing!</p>
-            <p>I'm <span><img src="./assets/Aman-white.png" class="signature__img"
-                        alt=""></span>,</p>
-            <p>Web Developer</p> -->
-            <h2 class="text">Hi,I'm <span class="multitext"></span> </h2>
+    <div class="nav-big big__nav--hidden">
+        <div>
+            <img id="amanImg" src="./assets/Aman Orange.jpg" alt="aman">
         </div>
 
-        <div class="hero__btn">
-                   <a href="./assets/Aman-verma-cv.pdf" download="Aman-verma-cv"
-                    class="download-btn">Resume <i
-                    class="fa-solid fa-file-arrow-down"></i></a>        
-            <button class="hero__section--btn" id="#">Contact Me!</button>
+        <nav class="nav">
+            <ul class="nav__links">
+                <li class="nav__link liabout"><a>About</a></li>
+                <li class="nav__link liskill"><a>My Skill</a></li>
+                <li class="nav__link liwork"><a>Work</a></li>
+                <li class="nav__link licontact"><a>Contact</a></li>
+                <li class="nav__link liblog"><a>Blog</a></li>
+            </ul>
+        </nav>
+        <div class="social-icon">
+            <i></i>
+            <i></i>
+            <i></i>
         </div>
-    </section>
+    </div>
 
 
-
-    <section class="section__portfolio section">
-        <h1 class="slogan">Bring your business live with Me</h1>
-        <div class="slogan__line"></div>
-        <h2 class="section__portfolio--heading">My Awesome Portfolio</h2>
-        <p>A small gallery of recent projects chosen by me. I've done them all together
-            with amazing people from companies around the globe. It's only a drop in the
-            ocean compared to the entire list.
-        </p>
-
-        <p>The following projects are created my using HTML, CSS, JavaScript</p>
-
-        <div class="app__portfolio">
-            <div class="app__portfolio--list">
-                <img src="./assets/Screenshot 2022-10-15 155221.jpg"
-                    class="app__portfolio--img" alt="firstpost">
-                <h3>Project Name</h3>
-                <p>Mini Details</p>
-
-                <div class="app__portfolio--view hidden">
-                    <!-- make it relative -->
-                    <a href=""><i class="fa-regular fa-eye"></i></a>
-                    <a href=""><i class="fa-brands fa-github"></i></a>
+    <div class="main__body--container" style="height: auto !important;">
+        <menu>
+            <div class="main-navbar">
+                <div class="mobile-nav mobile__nav--hidden">
+                    <img src="./assets/Aman-white.png" class="signature__img"
+                        alt="aman-signature">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
+        </menu>
 
-
-            <div class="app__portfolio--list">
-                <img src="./assets/Screenshot 2022-10-15 155221.jpg"
-                    class="app__portfolio--img" alt="firstpost">
-                <h3>Project Name</h3>
-                <p>Mini Details</p>
-
-                <div class="app__portfolio--view hidden">
-                    <!-- make it relative -->
-                    <a href=""><i class="fa-regular fa-eye"></i></a>
-                    <a href=""><i class="fa-brands fa-github"></i></a>
-                </div>
+        <section class="hero--section">
+            <!-- incomplete-->
+            <div class="hero__intro">
+                <h1>Hi, 🙋‍♂️</h1>
+                <!-- <p>How you doing!</p> -->
+                <h1>I'm <span><img src="./assets/Aman-white.png" class="signature__img"
+                            alt=""></span>,</h1>
+                <h2 class="text"><span class="multitext"></span></h2>
             </div>
-        </div>
-    </section>
+
+            <div class="hero__btn">
+                <button class="hero__section--btn"><a href="./assets/Aman-verma-cv.pdf"
+                        download="Aman-verma-cv" class="download-btn">Resume <i
+                            class="fa-solid fa-file-arrow-down"></i></a></button>
+                <button class="hero__section--btn">
+                    <a href="#contact--me">Contact Me!</a></button>
+            </div>
+        </section>
 
 
 
+        <section class="section__portfolio section" id="portfolio">
+            <h1 class="slogan">Bring your business live with Me</h1>
+            <div class="slogan__line"></div>
+            <h2 class="section__portfolio--heading">My Awesome Portfolio</h2>
+            <p>A small gallery of recent projects chosen by me. I've done them all
+                together
+                with amazing people from companies around the globe. It's only a drop in
+                the
+                ocean compared to the entire list.
+            </p>
 
+            <p>The following projects are created my using HTML, CSS, JavaScript</p>
 
-    <section class="section__about section">
-        <div class="about--myself">
-            <h1>It's Me</h1>
-            <div class="line"></div><!-- a solid line -->
-            <p>I'm a Full Stack Web Developer with hands-on experience in designing,
-                developing, and maintaining projects. Adept at learning, unlearning,
-                and relearning. Demonstrate the capability of managing clean, elegant,
-                and efficient code. Highly skilled in collaboration, decision-making,
-                and Data Structures & Algorithms. I'm still enthusiastically grabbing
-                on to multiple programming languages, frameworks, and principles that
-                I can add to my skillset.</p>
-        </div>
+            <div class="app__portfolio">
+                <div class="app__portfolio--list">
+                    <img src="./assets/Screenshot 2022-10-15 155221.jpg"
+                        class="app__portfolio--img" alt="firstpost">
+                    <h3>Project Name</h3>
+                    <p>Mini Details</p>
 
-
-        <div class="about--skillex">
-            <h2>Skills & Experience</h2>
-            <div class="about--container">
-                <div class="about--skillicon">
-                    <i class="fa-brands fa-html5 fa-4x"></i>
-                    <i class="fa-brands fa-css3-alt fa-4x"></i>
-                    <i class="fa-brands fa-square-js fa-4x"></i>
-                    <i class="fa-brands fa-node fa-4x"></i>
-                    <i class="fa-brands fa-git-alt fa-4x"></i>
-                    <i class="fa-brands fa-java fa-4x"></i>
-                </div>
-
-                <div class="about__studies--lists">
-                    <div class="studies--list">
-                        <div class="studies__list--header">
-                            <div class="studies__list--headericon">
-                                <i class="fa-solid fa-graduation-cap"></i>
-                            </div>
-                            <div class="studies__list--headerdata">
-                                <h3>Bachlore's Art</h3>
-                                <p>2020</p>
-                            </div>
-                        </div>
-                        <p>Prayagraj University</p>
+                    <div class="app__portfolio--view hidden">
+                        <!-- make it relative -->
+                        <a href=""><i class="fa-regular fa-eye"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
                     </div>
+                </div>
 
-                    <div class="studies--list">
-                        <div class="studies__list--header">
-                            <div class="studies__list--headericon">
-                                <i class="fa-solid fa-graduation-cap"></i>
-                            </div>
-                            <div class="studies__list--headerdata">
-                                <h3>Bachlore's Art</h3>
-                                <p>2020</p>
-                            </div>
-                        </div>
-                        <p>Prayagraj University</p>
-                    </div>
 
-                    <div class="studies--list">
-                        <div class="studies__list--header">
-                            <div class="studies__list--headericon">
-                                <i class="fa-solid fa-graduation-cap"></i>
-                            </div>
-                            <div class="studies__list--headerdata">
-                                <h3>Bachlore's Art</h3>
-                                <p>2020</p>
-                            </div>
-                        </div>
-                        <p>Prayagraj University</p>
+                <div class="app__portfolio--list">
+                    <img src="./assets/Screenshot 2022-10-15 155221.jpg"
+                        class="app__portfolio--img" alt="firstpost">
+                    <h3>Project Name</h3>
+                    <p>Mini Details</p>
+
+                    <div class="app__portfolio--view hidden">
+                        <!-- make it relative -->
+                        <a href=""><i class="fa-regular fa-eye"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
             </div>
+        </section>
 
-        </div>
 
 
-        <div class="about--hobbies">
-            <h1>My Hobbies</h1>
-            <p>These are some of the hobbies which I offer as services. Reach out to me if
-                I can help you with any!</p>
-            <div class="hobbies--lists">
-                <div class="hobbies--item">
-                    <i></i>
-                    <h3></h3>
+
+
+        <section class="section__about section" id="section__about">
+            <div class="about--myself">
+                <h1>It's Me</h1>
+                <div class="line"></div><!-- a solid line -->
+                <p>I'm a Full Stack Web Developer with hands-on experience in designing,
+                    developing, and maintaining projects. Adept at learning, unlearning,
+                    and relearning. Demonstrate the capability of managing clean, elegant,
+                    and efficient code. Highly skilled in collaboration, decision-making,
+                    and Data Structures & Algorithms. I'm still enthusiastically grabbing
+                    on to multiple programming languages, frameworks, and principles that
+                    I can add to my skillset.</p>
+            </div>
+
+
+            <div class="about--skillex" id="skill">
+                <h2>Skills & Experience</h2>
+                <div class="about--container">
+                    <div class="about--skillicon">
+                        <i class="fa-brands fa-html5 fa-4x"></i>
+                        <i class="fa-brands fa-css3-alt fa-4x"></i>
+                        <i class="fa-brands fa-square-js fa-4x"></i>
+                        <i class="fa-brands fa-node fa-4x"></i>
+                        <i class="fa-brands fa-git-alt fa-4x"></i>
+                        <i class="fa-brands fa-java fa-4x"></i>
+                    </div>
+
+                    <div class="about__studies--lists">
+                        <div class="studies--list">
+                            <div class="studies__list--header">
+                                <div class="studies__list--headericon">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <div class="studies__list--headerdata">
+                                    <h3>Bachlore's Art</h3>
+                                    <p>2020</p>
+                                </div>
+                            </div>
+                            <p>Prayagraj University</p>
+                        </div>
+
+                        <div class="studies--list">
+                            <div class="studies__list--header">
+                                <div class="studies__list--headericon">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <div class="studies__list--headerdata">
+                                    <h3>Bachlore's Art</h3>
+                                    <p>2020</p>
+                                </div>
+                            </div>
+                            <p>Prayagraj University</p>
+                        </div>
+
+                        <div class="studies--list">
+                            <div class="studies__list--header">
+                                <div class="studies__list--headericon">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <div class="studies__list--headerdata">
+                                    <h3>Bachlore's Art</h3>
+                                    <p>2020</p>
+                                </div>
+                            </div>
+                            <p>Prayagraj University</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="hobbies--item">
-                    <i></i>
-                    <h3></h3>
-                </div>
+            </div>
 
-                <div class="hobbies--item">
-                    <i></i>
-                    <h3></h3>
+
+            <div class="about--hobbies">
+                <h1>My Hobbies</h1>
+                <div class="line"></div>
+                <p>These are some of the hobbies which I offer as services. Reach out to
+                    me if
+                    I can help you with any!</p>
+                <div class="hobbies--lists">
+                    <div class="hobbies--item">
+                        <i></i>
+                        <h3></h3>
+                    </div>
+
+                    <div class="hobbies--item">
+                        <i></i>
+                        <h3></h3>
+                    </div>
+
+                    <div class="hobbies--item">
+                        <i></i>
+                        <h3></h3>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section__contact section">
-        <h1>Contact Me</h1>
-        <p>I’m interested in freelance opportunities – especially ambitious or large
-            projects. However, if you have other request or question, don’t hesitate to
-            use the form.</p>
-        <div class="contact__form">
-            <form action="submit" class="main__contact">
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Subject">
-                <textarea name="msg" id="massage" cols="40" placeholder="Massage"
-                    spellcheck="false"></textarea>
-            </form>
-            <button class="btn submit">Send Message</button>
-        </div>
-    </section>
-
-
-    <footer>
-        <!-- demo navigation -->
-    </footer>
+        <section class="section__contact section" id="contact--me">
+            <h1>Contact Me</h1>
+            <div class="line"></div>
+            <p>I’m interested in freelance opportunities – especially ambitious or large
+                projects. However, if you have other request or question, don’t hesitate
+                to
+                use the form.</p>
+            <div class="contact__form">
+                <form action="submit" class="main__contact">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Subject">
+                    <textarea name="msg" id="massage" cols="40" placeholder="Massage"
+                        spellcheck="false"></textarea>
+                </form>
+                <button class="btn submit">Send Message</button>
+            </div>
+        </section>
 
 
-    <script src="./script/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <footer>
+            <!-- demo navigation -->
+        </footer>
+    </div>
 </body>
 
 </html>
 
 <script>
-    
-    // multi text effect //
-const typingEffect = new Typed(".multitext",{
-    strings : ["Coder","Developer","Backend Developer"],
-    loop : true,
-    typeSpeed : 100,
-    backSpeed : 80,
-    startDelay : 1000,
-    backDelay : 1500,
 
-})
+    // multi text effect //
+    const typingEffect = new Typed(".multitext", {
+        strings: ["Coder", "Developer", "Backend Developer"],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        startDelay: 1000,
+        backDelay: 1500,
+
+    })
 
 </script>
