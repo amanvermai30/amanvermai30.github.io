@@ -51,7 +51,6 @@ body {
     color: var(--white);
 }
 
-/* do more work on img - do photshop */
 #amanImg {
     width: 100px;
 }
@@ -100,6 +99,13 @@ body {
     color: var(--white);
     box-shadow: 0 0 3px #5b5fb7, 0 0 5px #52537e;
     text-decoration: none;
+    cursor: pointer;
+}
+
+.hero__section--btn:hover {
+    background-color: #4a56c2;
+    box-shadow: 0 0 5px #6368d7, 0 0 8px #7778b2;
+
 }
 
 .hero__section--btn>a {
@@ -195,12 +201,16 @@ body {
     width: 80%;
 }
 
+.app__portfolio--img:hover {
+    cursor: pointer;
+}
+
 .app__portfolio--view {
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 5em;
+    max-width: 7em;
     width: 50%;
     top: 28%;
     left: 0;
@@ -221,7 +231,9 @@ body {
     display: none;
 }
 
-
+.fa-eye {
+    font-size: 30px;
+}
 
 
 /* About Section */
@@ -410,23 +422,87 @@ body {
 
 .btn {
     border: none;
-    padding: .5em;
+    font-size: 17px;
+    padding: .5em 1em;
     border-radius: 5px;
     margin: 1.5em 0 0 0;
     color: rgb(77, 0, 0);
     background-color: #00b99c;
     box-shadow: 0 0 3px #51b3a4, 0 0 5px #03daba;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #00bea2;
+    box-shadow: 0 0 5px #51b3a4, 0 0 8px #03daba;
+
 }
 
 
-
-
-
-footer {
-    height: 200px;
-
+.contact__Info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.contact__details {
+    padding-top: 5em;
+}
+
+.contact__details--item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin: 2em 0;
+}
+
+.fa-envelope,
+.fa-phone,
+.fa-location-dot {
+    color: rgb(186, 186, 186);
+    font-size: 30px;
+}
+
+.contact__details--item>h2 {
+    color: rgb(233, 233, 233);
+}
+
+
+.social-icon-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2em;
+    padding-bottom: 4em;
+}
+
+.social-icon-footer>i:hover {
+    cursor: pointer;
+}
+
+.fa-github {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.fa-linkedin-in {
+    font-size: 30px;
+    color: #0e76a8;
+    cursor: pointer;
+}
+
+.fa-hackerrank {
+    font-size: 30px;
+    color: green;
+    cursor: pointer;
+}
+
+.fa-twitter {
+    font-size: 30px;
+    color: #1DA1F2;
+}
 
 
 /* reveal while scrolling */
@@ -684,7 +760,7 @@ footer {
 
     .nav-big {
         display: flex;
-        justify-content: space-around;
+        /* justify-content: space-around; */
         align-items: center;
         flex-direction: column;
         width: 10rem;
@@ -696,6 +772,11 @@ footer {
         right: auto;
         bottom: 0;
         z-index: 9;
+        padding-top: 4em;
+    }
+
+    .nav {
+        padding-top: 2.5em;
     }
 
     .nav__link {
@@ -711,6 +792,28 @@ footer {
 
     .nav__link>a {
         color: var(--white);
+    }
+
+    .social-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        padding-top: 1em;
+    }
+
+    .fa-github {
+        cursor: pointer;
+    }
+
+    .fa-linkedin-in {
+        color: #0e76a8;
+        cursor: pointer;
+    }
+
+    .fa-hackerrank {
+        color: green;
+        cursor: pointer;
     }
 
     .main__body--container {
@@ -732,4 +835,15 @@ footer {
     .hero--section {
         padding: 5em 0 0 3em;
     }
+}
+
+@media screen and (max-width: 330px) {
+
+    .fa-phone,
+    .fa-location-dot,
+    .fa-envelope,
+    .contact__details--item>h2 {
+        font-size: 20px;
+    }
+
 }
