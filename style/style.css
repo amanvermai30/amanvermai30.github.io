@@ -29,12 +29,23 @@ body {
     max-width: 50px;
 }
 
+.main-navbar {
+    /* filter: blur(9px); */
+}
+
 .mobile-nav {
     display: flex;
     align-content: center;
     justify-content: space-between;
     align-items: center;
-    padding: 0.25em .75em;
+    padding: 1em 1.5em;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--main-bg);
+
+    z-index: 99;
 }
 
 /* 
@@ -43,9 +54,9 @@ body {
 }
 */
 
-.big__nav--hidden {
+/* .big__nav--hidden {
     display: none;
-}
+} */
 
 .fa-bars {
     color: var(--white);
@@ -73,6 +84,7 @@ body {
 
 .hero--section {
     padding: 1em;
+    margin-top: 3em;
 }
 
 .hero__intro>h1 {
@@ -85,7 +97,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 2em;
+    /* margin-top: 2em; */
 }
 
 .hero__section--btn {
@@ -527,6 +539,10 @@ body {
         padding: 1em;
     }
 
+    .hero--section {
+        margin-top: 3em;
+    }
+
     .signature__img {
         max-width: 75px;
     }
@@ -716,8 +732,8 @@ body {
 @media screen and (min-width: 500px) {
     .hero--section {
         padding: 0 0 0 3em;
+        margin-top: 6em;
     }
-
 
     .hero__intro>h2 {
         font-size: 45px;
@@ -729,6 +745,10 @@ body {
 }
 
 @media screen and (min-width: 700px) {
+    .hero--section {
+        margin-top: 5em;
+    }
+
     .hero__intro {
         padding: 2em;
     }
@@ -763,7 +783,7 @@ body {
         /* justify-content: space-around; */
         align-items: center;
         flex-direction: column;
-        width: 10rem;
+        width: 13rem;
         background-color: var(--main-bg);
         height: 100vh;
         position: fixed;
@@ -817,7 +837,7 @@ body {
     }
 
     .main__body--container {
-        margin-left: 10rem;
+        margin-left: 13rem;
     }
 
     .hero__intro {
@@ -833,7 +853,73 @@ body {
     }
 
     .hero--section {
-        padding: 5em 0 0 3em;
+        padding: 0 0 0 3em;
+    }
+}
+
+@media screen and (max-width: 870px) {
+
+    /* main Navigation - laptop */
+    /* .big__nav--hidden {
+        display: none;
+    } */
+
+    .nav-big {
+        display: flex;
+        /* justify-content: space-around; */
+        align-items: center;
+        flex-direction: column;
+        width: 13rem;
+        background-color: var(--main-bg);
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        lefT: -1100px;
+        right: auto;
+        bottom: 0;
+        z-index: 9;
+        padding-top: 4em;
+    }
+
+    .nav {
+        padding-top: 2.5em;
+    }
+
+    .nav__link {
+        width: 6em;
+        padding: .7em;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .nav__link:hover {
+        background-color: #262525;
+    }
+
+    .nav__link>a {
+        color: var(--white);
+    }
+
+    .social-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        padding-top: 1em;
+    }
+
+    .fa-github {
+        cursor: pointer;
+    }
+
+    .fa-linkedin-in {
+        color: #0e76a8;
+        cursor: pointer;
+    }
+
+    .fa-hackerrank {
+        color: green;
+        cursor: pointer;
     }
 }
 
