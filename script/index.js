@@ -94,3 +94,24 @@ appPortfolioList.forEach((e) => {
 })
 
 
+
+
+// hamburger menu
+const hamburger = document.querySelector('.fa-bars');
+const mainNav = document.querySelector('.nav-big');
+const navLink = document.querySelectorAll('.nav__link');
+const mainBodyData = document.querySelector('.main__body--container')
+
+
+
+hamburger.addEventListener('click', function () {
+    mainBodyData.style.filter = "blur(5px)";
+    mainNav.style.left = '0px';
+})
+
+navLink.forEach((e) => {
+    e.addEventListener('click', () => {
+        mainNav.style.left = '-1110px';
+        mainBodyData.style.filter = "blur(0px)";
+    })
+})
