@@ -104,14 +104,50 @@ const mainBodyData = document.querySelector('.main__body--container')
 
 
 
-hamburger.addEventListener('click', function () {
-    mainBodyData.style.filter = "blur(5px)";
-    mainNav.style.left = '0px';
+hamburger.addEventListener('click', function (e) {
+    console.log(e.target);
+    if (e.target.classList.contains('fa-bars')) {
+        mainBodyData.style.filter = "blur(5px)";
+        mainNav.style.left = '0px';
+        mainNav.style.top = '0px';
+    }
 })
 
 navLink.forEach((e) => {
     e.addEventListener('click', () => {
         mainNav.style.left = '-1110px';
+        mainNav.style.top = '0px';
         mainBodyData.style.filter = "blur(0px)";
     })
 })
+
+mainBodyData.addEventListener('click', (e) => {
+    console.log(e.currentTarget);
+    if (e.currentTarget.style.filter = "blur(5px)") {
+        console.log('true');
+        mainNav.style.left = '-1110px';
+        mainBodyData.style.filter = "blur(0px)";
+    }
+})
+
+
+
+//******************************************** */
+
+
+let navbar = document.querySelector("#main-navbar");
+let control = navbar.offsetTop;
+window.onscroll = function(){navbarStickyFun()};
+
+
+navbarStickyFun = ()=>{
+
+    if(window.pageYOffset >= control){
+        navbar.classList.add("sticky");
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
+
+
+
