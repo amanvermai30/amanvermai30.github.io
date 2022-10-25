@@ -29,9 +29,9 @@ body {
     max-width: 50px;
 }
 
-.main-navbar {
-    /* filter: blur(9px); */
-}
+/* .main-navbar {
+     filter: blur(9px);
+} */
 
 .mobile-nav {
     display: flex;
@@ -39,27 +39,23 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1em 1.5em;
+    background-color: var(--main-bg);
+    z-index: 99;
+    /* border:  2px solid red; */
     overflow: hidden;
+}
+.sticky{
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: var(--main-bg);
-
-    z-index: 99;
 }
-
-/* 
-.mobile__nav--hidden {
-    display: none;
-}
-*/
-
-/* .big__nav--hidden {
-    display: none;
-} */
-
+.sticky + .content {
+    padding-top: 120px;
+  }
+  
 .fa-bars {
     color: var(--white);
+    cursor: pointer;
 }
 
 #amanImg {
@@ -84,7 +80,6 @@ body {
 
 .hero--section {
     padding: 1em;
-    margin-top: 3em;
 }
 
 .hero__intro>h1 {
@@ -539,10 +534,6 @@ body {
         padding: 1em;
     }
 
-    .hero--section {
-        margin-top: 3em;
-    }
-
     .signature__img {
         max-width: 75px;
     }
@@ -700,6 +691,21 @@ body {
         max-width: 700px;
     }
 
+    .hero__intro {
+        padding: 2em;
+    }
+
+    .hero__intro>h1 {
+        font-size: 3em;
+    }
+
+    .hero__btn {
+        padding: 2em 0 0 20px;
+    }
+
+    .hero__section--btn {
+        padding: 1em 1.5em;
+    }
 
 }
 
@@ -732,7 +738,6 @@ body {
 @media screen and (min-width: 500px) {
     .hero--section {
         padding: 0 0 0 3em;
-        margin-top: 6em;
     }
 
     .hero__intro>h2 {
@@ -744,27 +749,6 @@ body {
     }
 }
 
-@media screen and (min-width: 700px) {
-    .hero--section {
-        margin-top: 5em;
-    }
-
-    .hero__intro {
-        padding: 2em;
-    }
-
-    .hero__intro>h1 {
-        font-size: 3em;
-    }
-
-    .hero__btn {
-        padding: 2em 0 0 20px;
-    }
-
-    .hero__section--btn {
-        padding: 1em 1.5em;
-    }
-}
 
 
 /* main Navigation - laptop */
