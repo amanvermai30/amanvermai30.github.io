@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 45%;
 }
 
 :root {
@@ -41,7 +44,6 @@ body {
     padding: 1em 1.5em;
     background-color: var(--main-bg);
     z-index: 99;
-    /* border:  2px solid red; */
     overflow: hidden;
 }
 .sticky{
@@ -49,9 +51,6 @@ body {
     top: 0;
     width: 100%;
 }
-.sticky + .content {
-    padding-top: 120px;
-  }
   
 .fa-bars {
     color: var(--white);
@@ -59,7 +58,10 @@ body {
 }
 
 #amanImg {
-    width: 100px;
+    width: 200px;
+    border-radius: 100px;
+    border: 5px solid var(--bs-cyan);
+    
 }
 
 .nav__links {
@@ -75,16 +77,21 @@ body {
 
 /* Hero Section */
 .hero__intro {
-    height: 50vh;
+    height: 30vh;
 }
+
+.hero--section > .content{
+    /* border: 2px solid green; */
+    padding-top: 7rem;
+}
+
 
 .hero--section {
     padding: 1em;
 }
 
-.hero__intro>h1 {
+.hero__intro > h1 {
     color: var(--white);
-    font-weight: 700;
 }
 
 .hero__btn {
@@ -617,6 +624,9 @@ body {
     .hero__section--btn {
         padding: .7em 1.2em;
     }
+    #amanImg{
+        width: 170px;
+    }
 }
 
 @media screen and (min-width: 400px) {
@@ -642,6 +652,9 @@ body {
         align-content: space-between;
         align-items: center;
     }
+    #amanImg{
+        width: 170px;
+    }
 }
 
 @media screen and (max-width: 190px) {
@@ -663,6 +676,19 @@ body {
     .studies--list>p {
         margin: 0 4.6em;
         margin-top: -11px;
+    }
+    #amanImg{
+        width: 150px;
+    }
+    .hero__intro{
+        height: 40vh;
+    }
+    .hero--section > .content{
+        padding-top: 2.6rem;
+        font-size: 1rem;
+    }
+    .multitext{
+        font-size: 2rem;
     }
 }
 
@@ -709,6 +735,7 @@ body {
 
 }
 
+
 @media screen and (min-width: 450px) {
     .hero__btn {
         display: flex;
@@ -720,6 +747,10 @@ body {
 
     .hero__section--btn {
         margin: 0 1em;
+    }
+    .mobile-nav {
+        padding: 2em;
+        height: 40px;
     }
 }
 
@@ -746,8 +777,30 @@ body {
 
     .mobile-nav {
         padding: 2em;
+        height: 40px;
+    }
+    #amanImg{
+        width: 200px;
     }
 }
+
+@media screen and (max-width:870px) {
+    .hero__intro{
+        height: 49vh;
+    }
+    .hero--section > .content{
+        padding-top: 3.3rem;
+        /* border: 2px solid red; */
+        font-size: 0.8rem;
+    }
+    .multitext{
+        font-size: 2rem;
+    }
+    *{
+        background-position: right;
+    }
+}
+
 
 
 
@@ -826,6 +879,7 @@ body {
 
     .hero__intro {
         padding: 2em;
+        height: 60vh;
     }
 
     .hero__intro>h1 {
