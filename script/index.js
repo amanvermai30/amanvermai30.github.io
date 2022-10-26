@@ -37,23 +37,6 @@ liContact.addEventListener('click', (e) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Reveale section
 // select all section
 const allSection = document.querySelectorAll('.section');
@@ -130,24 +113,6 @@ mainBodyData.addEventListener('click', (e) => {
     }
 })
 
-
-
-//******************************************** */
-
-
-let navbar = document.querySelector("#main-navbar");
-let control = navbar.offsetTop;
-window.onscroll = function(){navbarStickyFun()};
-
-
-navbarStickyFun = ()=>{
-
-    if(window.pageYOffset >= control){
-        navbar.classList.add("sticky");
-    } else {
-        navbar.classList.remove("sticky");
-    }
-}
 
 
 
