@@ -2,10 +2,10 @@ const appPortfolioList = document.querySelectorAll('.app__portfolio--list');
 const appPortfolioView = document.querySelectorAll('app__portfolio--view');
 
 
-const navliAbout = document.querySelector(".liabout")
-const liSkill = document.querySelector(".liskill")
-const liWork = document.querySelector(".liwork")
-const liContact = document.querySelector(".licontact")
+const liAbout = document.querySelectorAll(".liabout")
+const liSkill = document.querySelectorAll(".liskill")
+const liWork = document.querySelectorAll(".liwork")
+const liContact = document.querySelectorAll(".licontact")
 
 
 const sectionAbout = document.querySelector(".section__about")
@@ -14,24 +14,35 @@ const sectionWork = document.querySelector(".section__portfolio")
 const sectionContact = document.querySelector(".section__contact")
 
 
-navliAbout.addEventListener('click', (e) => {
-    // scrolling
-    sectionAbout.scrollIntoView({ behavior: 'smooth' });
+liAbout.forEach((e) => {
+    e.addEventListener('click', (e) => {
+        // scrolling
+        console.log(e.target);
+        sectionAbout.scrollIntoView({ behavior: 'smooth' });
+    })
 })
 
-liSkill.addEventListener('click', (e) => {
-    // scrolling
-    sectionSkill.scrollIntoView({ behavior: 'smooth' });
+liSkill.forEach((e) => {
+    e.addEventListener('click', (e) => {
+        // scrolling
+        sectionSkill.scrollIntoView({ behavior: 'smooth' });
+    })
 })
 
-liWork.addEventListener('click', (e) => {
-    // scrolling
-    sectionWork.scrollIntoView({ behavior: 'smooth' });
+liWork.forEach((e) => {
+    e.addEventListener('click', (e) => {
+        // scrolling
+        console.log(e.target);
+        sectionWork.scrollIntoView({ behavior: 'smooth' });
+    })
 })
 
-liContact.addEventListener('click', (e) => {
-    // scrolling
-    sectionContact.scrollIntoView({ behavior: 'smooth' });
+liContact.forEach((e) => {
+    e.addEventListener('click', (e) => {
+        // scrolling
+        console.log(e.target);
+        sectionContact.scrollIntoView({ behavior: 'smooth' });
+    })
 })
 
 
@@ -81,8 +92,8 @@ appPortfolioList.forEach((e) => {
 
 // hamburger menu
 const hamburger = document.querySelector('.fa-bars');
-const mainNav = document.querySelector('.nav-big');
-const navLink = document.querySelectorAll('.nav__link');
+const mainNav = document.querySelector('.nav-big--2');
+const navLink = document.querySelectorAll('.nav__link--2');
 const mainBodyData = document.querySelector('.main__body--container')
 
 
