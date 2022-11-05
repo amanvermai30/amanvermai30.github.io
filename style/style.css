@@ -28,7 +28,10 @@ body {
     background-color: var(--main-bg);
 }
 
-.signature__img {
+.icon__img {
+    max-width: 30px;
+}
+.signature__img{
     max-width: 50px;
 }
 
