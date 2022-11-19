@@ -3,10 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 45%;
 }
+
 
 :root {
     --main-bg: #1d1d1d;
@@ -31,7 +29,8 @@ body {
 .icon__img {
     max-width: 30px;
 }
-.signature__img{
+
+.signature__img {
     max-width: 50px;
 }
 
@@ -81,6 +80,21 @@ body {
 .big__nav--hidden--2 {
     display: none;
 }
+
+.hero--main__hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+#hero--image__main {
+    padding: 0 2em 0 0;
+}
+
+#hero--image__main>img {
+    width: 30em;
+}
+
+
 
 
 /* Hero Section */
@@ -181,7 +195,7 @@ body {
 /* Portfolio list content */
 .app__portfolio {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -195,8 +209,11 @@ body {
     align-items: center;
     justify-content: center;
 
+    min-width: 49%;
+    width: 30rem;
+
     position: relative;
-    padding-top: 1em;
+    padding-top: 3em;
 }
 
 .app__portfolio--list>h3 {
@@ -298,33 +315,16 @@ body {
 
 .about--skillicon {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 2em;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 4em;
+    max-width: 70%;
+    margin-bottom: 5em;
 }
 
-.fa-html5 {
-    color: #D84924;
-}
-
-.fa-css3-alt {
-    color: #146CAE;
-}
-
-.fa-square-js {
-    color: #e8e822;
-}
-
-.fa-git-alt {
-    color: #E44C30;
-}
-
-.fa-java {
-    color: #4D7997;
-}
-
-.fa-node {
-    color: #7CC327;
+.about--skillicon>img {
+    width: 9em;
 }
 
 
@@ -394,6 +394,51 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+
+
+/* Statistics section */
+
+.about--statistics>h1 {
+    color: var(--bs-cyan);
+    font-size: 40px;
+}
+
+
+.statistics--lists {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2em;
+    padding: 3em;
+}
+
+
+.statistics--item {
+    flex: 1 1 20rem;
+    text-align: center;
+    flex-direction: column;
+    height: 20em;
+    border-radius: 5px;
+    padding: 2em;
+    background: #1c2040;
+}
+
+
+.statistics--item>img {
+    max-width: 10em;
+    width: 80%;
+    padding-bottom: 1em;
+}
+
+
+.statistics--item>h2 {
+    color: white;
+    opacity: .9;
+}
+
+
 
 
 .section__contact>h1 {
@@ -643,16 +688,6 @@ body {
         top: 40%;
     }
 
-    .about--skillicon {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        max-width: 500px;
-        margin: 0 0 5em 0;
-        padding: 0em 5em;
-        gap: 4em;
-    }
-
     .hero__btn {
         display: flex;
         flex-direction: row;
@@ -703,6 +738,10 @@ body {
 
     .multitext {
         font-size: 2rem;
+    }
+
+    #hero--image__main>img {
+        width: 8em;
     }
 }
 
@@ -778,7 +817,12 @@ body {
         max-width: 900px;
         padding: 2em 0 0 3em;
     }
+}
 
+@media screen and (max-width: 1000px) {
+    .hero--main__hero {
+        flex-direction: column;
+    }
 }
 
 @media screen and (min-width: 500px) {
@@ -795,9 +839,10 @@ body {
         height: 40px;
     }
 
-    
+
 }
-@media screen and (max-width: 500px){
+
+@media screen and (max-width: 500px) {
     #amanImg {
         width: 120px;
     }
@@ -820,6 +865,14 @@ body {
 
     * {
         background-position: right;
+    }
+
+    /* #hero--image__main>img {
+        width: 20em;
+    } */
+
+    #hero--image__main {
+        display: none;
     }
 }
 
@@ -900,7 +953,7 @@ body {
     }
 
     .hero__intro {
-        padding: 2em;
+        padding: 7em 2em;
         height: 60vh;
     }
 
@@ -915,6 +968,7 @@ body {
     .hero--section {
         padding: 0 0 0 3em;
     }
+
     #amanImg {
         width: 200px;
     }
@@ -1004,6 +1058,10 @@ body {
     .fa-envelope,
     .contact__details--item>h2 {
         font-size: 20px;
+    }
+
+    #hero--image__main>img {
+        width: 15em;
     }
 
 }
