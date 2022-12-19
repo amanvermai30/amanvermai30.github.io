@@ -995,6 +995,12 @@ body {
         display: none;
     }
 
+    .static-components{
+        display: flex;
+        flex-direction: column;
+        padding: 0 1em;
+    }
+
     .nav-big--2 {
         display: flex;
         /* justify-content: space-around; */
@@ -1071,4 +1077,14 @@ body {
         width: 15em;
     }
 
+}
+
+
+
+/* -----> staics part */
+
+
+.static-components{
+    display: flex;
+    padding: 0 1em;
 }
