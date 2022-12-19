@@ -228,8 +228,15 @@ body {
 
 
 .app__portfolio--list>p {
-    font-size: .7em;
+    font-size: .9em;
     color: var(--bs-gray-500);
+    padding: .8em 3.5em;
+    /* border: 2px solid red; */
+}
+.app__portfolio--list>p+p {
+    font-size: .9em;
+    color: var(--bs-gray-500);
+    margin-right: 14.8em;
 }
 
 
