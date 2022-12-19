@@ -84,6 +84,7 @@ body {
 .hero--main__hero {
     display: flex;
     justify-content: space-between;
+    /* border: 2px solid red; */
 }
 
 #hero--image__main {
@@ -100,11 +101,12 @@ body {
 /* Hero Section */
 .hero__intro {
     height: 30vh;
+    /* border: 2px solid blue; */
 }
 
 .hero--section>.content {
     /* border: 2px solid green; */
-    padding-top: 7rem;
+    padding-top: 5rem;
 }
 
 
@@ -121,6 +123,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* border: 2px solid green; */
     /* margin-top: 2em; */
 }
 
