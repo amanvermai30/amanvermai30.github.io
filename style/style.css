@@ -61,10 +61,9 @@ body {
 }
 
 #amanImg {
-    width: 200px;
+    width: 9.5em;
     border-radius: 100px;
-    border: 5px solid var(--bs-cyan);
-
+    border: 2px solid var(--bs-cyan);
 }
 
 .nav__links {
@@ -212,11 +211,20 @@ body {
     align-items: center;
     justify-content: center;
 
-    min-width: 49%;
+    min-width: 45%;
     width: 30rem;
 
     position: relative;
     padding-top: 3em;
+    height: 25em;
+
+    margin: 1em;
+
+    box-shadow: rgb(92 92 107 / 25%) 0px 2px 5px -1px, rgb(105 105 105 / 30%) 0px 1px 3px -1px;
+}
+
+.app__portfolio--list:hover {
+    box-shadow: rgba(114, 114, 133, 0.80) 0px 2px 5px -1px, rgba(187, 187, 187, 0.3) 0px 1px 3px -1px;
 }
 
 .app__portfolio--list>h3 {
@@ -227,16 +235,11 @@ body {
 
 
 
-.app__portfolio--list>p {
+.app__portfolio--list p {
     font-size: .9em;
     color: var(--bs-gray-500);
     padding: .8em 3.5em;
     /* border: 2px solid red; */
-}
-.app__portfolio--list>p+p {
-    font-size: .9em;
-    color: var(--bs-gray-500);
-    margin-right: 14.8em;
 }
 
 
@@ -333,10 +336,28 @@ body {
     margin-bottom: 5em;
 }
 
-.about--skillicon>img {
+.icon__container >img {
     width: 9em;
 }
 
+.icon__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    box-shadow: rgba(92, 92, 107, 0.25) 0px 2px 5px -1px, rgba(105, 105, 105, 0.3) 0px 1px 3px -1px;
+    padding: 2em;
+}
+
+.icon__container:hover {
+    box-shadow: rgba(114, 114, 133, 0.80) 0px 2px 5px -1px, rgba(187, 187, 187, 0.3) 0px 1px 3px -1px;
+
+}
+
+.icon__container h2 {
+    color: white;
+}
 
 .about__studies--lists {
     display: flex;
@@ -385,25 +406,55 @@ body {
 }
 
 
-/* My hobbies */
+/* My Stubies */
+.qualification__data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
 
+.qualification__title {
+    color: white;
+}
 
-.about--hobbies>h1 {
+.qualification__subtitle {
+    display: inline-block;
+    margin-bottom: 1em;
+    color: white;
+}
+
+.qualification__rounder {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: #1C2040;
+    border-radius: 50%;
+}
+
+.qualification__line {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: #1C2040;
+    transform: translate(6px, -7px);
+}
+
+/* .about--stubies>h1 {
     color: var(--bs-cyan);
     margin: 1em 0 0em 0.3em;
 }
 
-.about--hobbies>p {
+.about--stubies>p {
     color: var(--white);
     font-size: .7em;
     padding-top: 1em;
     margin: 0 0 0 0.8em;
 }
 
-.hobbies--lists {
+.about__studies--lists {
     display: flex;
     flex-direction: column;
-}
+} */
 
 
 
@@ -435,13 +486,21 @@ body {
     background: #1c2040;
 }
 
+.statistics--item:hover {
+    background: #232850;
+}
+
 
 .statistics--item>img {
-    max-width: 10em;
+    max-width: 12em;
     width: 80%;
     padding-bottom: 1em;
 }
 
+.statistics--item img:hover {
+    max-width: 13em;
+    width: 90%;
+}
 
 .statistics--item>h2 {
     color: white;
@@ -689,7 +748,7 @@ body {
     }
 
     #amanImg {
-        width: 150px;
+        width: 9.5em;
     }
 }
 
@@ -708,7 +767,7 @@ body {
     }
 
     #amanImg {
-        width: 120px;
+        width: 9.5em;
     }
 }
 
@@ -734,7 +793,7 @@ body {
     }
 
     #amanImg {
-        width: 120px;
+        width: 9.5em;
     }
 
     .hero__intro {
@@ -861,7 +920,7 @@ body {
 
 @media screen and (max-width: 500px) {
     #amanImg {
-        width: 120px;
+        width: 9.5em;
     }
 }
 
@@ -987,7 +1046,7 @@ body {
     }
 
     #amanImg {
-        width: 200px;
+        width: 9.5em;
     }
 }
 
