@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Roboto+Slab:wght@200;400&display=swap');
+  
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +10,8 @@
 
 
 :root {
+    --primary-color:#edf2fc;
+    --secondary-color:#1d1d1d;
     --main-bg: #1d1d1d;
     --bs-secondary: #6c757d;
     --white: white;
@@ -15,15 +20,22 @@
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
     --bs-cyan: #0dcaf0;
-    --bs-gray-500: #adb5bd;
+    --bs-gray-500: #787b7e;
     --bs-gray-700: #495057;
     --bs-gray-800: #343a40;
     --bs-gray-900: #212529;
 }
 
+.light-theme{
+    --primary-color:#000106;
+    --secondary-color:#fff;
+}
+
 
 body {
-    background-color: var(--main-bg);
+    background-color: var(--secondary-color);
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Roboto Slab', serif;
 }
 
 .icon__img {
@@ -44,7 +56,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1em 1.5em;
-    background-color: var(--main-bg);
+    background-color: var(--secondary-color);
     z-index: 99;
     overflow: hidden;
 }
@@ -56,14 +68,13 @@ body {
 }
 
 .fa-bars {
-    color: var(--white);
+    color: var(--primary-color);
     cursor: pointer;
 }
 
 #amanImg {
-    width: 9.5em;
-    border-radius: 100px;
-    border: 2px solid var(--bs-cyan);
+    /* width: 3.5em; */
+    /* cursor: pointer; */
 }
 
 .nav__links {
@@ -72,7 +83,13 @@ body {
 
 .nav__link>a {
     text-decoration: none;
-    color: black;
+    color: var(--primary-color);
+}
+
+#sidebar_icon{
+    height: 60px;
+    padding: 1em 0 0.5em 1em ;
+    cursor: pointer;
 }
 
 
@@ -87,11 +104,14 @@ body {
 }
 
 #hero--image__main {
-    padding: 0 2em 0 0;
+    width: 40%;
+    /* border: 2px solid red; */
 }
 
 #hero--image__main>img {
-    width: 30em;
+    width: 17em;
+    border-radius: 130px;
+    padding: 5em 0 0 0;
 }
 
 
@@ -114,7 +134,7 @@ body {
 }
 
 .hero__intro>h1 {
-    color: var(--white);
+    color: var(--primary-color);
 }
 
 .hero__btn {
@@ -134,7 +154,7 @@ body {
     margin: 1em 0;
     border-radius: 5px;
     background-color: #545fc4;
-    color: var(--white);
+    color: var(--primary-color);
     box-shadow: 0 0 3px #5b5fb7, 0 0 5px #52537e;
     text-decoration: none;
     cursor: pointer;
@@ -148,7 +168,7 @@ body {
 
 .hero__section--btn>a {
     text-decoration: none;
-    color: white;
+    color: var(--secondary-color);
 }
 
 .multitext {
@@ -162,7 +182,7 @@ body {
     margin: 0;
     font-size: 2em;
     font-weight: 900;
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 
@@ -187,7 +207,7 @@ body {
 }
 
 .section__portfolio>p {
-    color: var(--white);
+    color: var(--primary-color);
     font-size: .7em;
     padding-top: 1em;
     margin: 0 0 0 .8em;
@@ -229,7 +249,7 @@ body {
 
 .app__portfolio--list>h3 {
     font-size: 1em;
-    color: var(--white);
+    color: var(--primary-color);
 }
 
 
@@ -237,8 +257,9 @@ body {
 
 .app__portfolio--list p {
     font-size: .9em;
-    color: var(--bs-gray-500);
+    color: var(--primary-color);
     padding: .8em 3.5em;
+    font-weight: 450;
     /* border: 2px solid red; */
 }
 
@@ -246,7 +267,7 @@ body {
 
 .fa-github,
 .fa-eye {
-    color: var(--white);
+    color: var(--primary-color);
 }
 
 .app__portfolio--img {
@@ -272,7 +293,7 @@ body {
 }
 
 .app__portfolio--view>a {
-    background-color: var(--main-bg);
+    background-color: var(--secondary-color);
     padding: .5em;
     border-radius: 50%;
     opacity: 0.75;
@@ -303,7 +324,7 @@ body {
 }
 
 .about--myself>p {
-    color: var(--white);
+    color: var(--primary-color);
     font-size: .7em;
     padding-top: 1em;
     margin: 0 0 0 0.8em;
@@ -356,7 +377,7 @@ body {
 }
 
 .icon__container h2 {
-    color: white;
+    color: var(--primary-color);
 }
 
 .about__studies--lists {
@@ -379,27 +400,27 @@ body {
 }
 
 .fa-graduation-cap {
-    color: var(--white);
+    color: var(--primary-color);
 }
 
 .studies__list--headerdata>h3 {
-    color: var(--white);
+    color: var(--primary-color);
 }
 
 .studies__list--headerdata>p {
-    color: var(--white);
+    color: var(--primary-color);
     font-size: 13px;
     opacity: .7;
 }
 
 .studies--list>p {
-    color: #ffffff;
+    color: var(--secondary-color);
     margin: 0 2.7em;
     opacity: .9;
 }
 
 .studies__list--headericon {
-    background-color: #000000;
+    background-color: var(--primary-color);
     padding: .6em;
     opacity: .5;
     border-radius: 50%;
@@ -414,13 +435,13 @@ body {
 }
 
 .qualification__title {
-    color: white;
+    color: var(--secondary-color);
 }
 
 .qualification__subtitle {
     display: inline-block;
     margin-bottom: 1em;
-    color: white;
+    color: var(--secondary-color);
 }
 
 .qualification__rounder {
@@ -503,7 +524,7 @@ body {
 }
 
 .statistics--item>h2 {
-    color: white;
+    color: var(--primary-color);
     opacity: .9;
 }
 
@@ -516,7 +537,7 @@ body {
 }
 
 .section__contact>p {
-    color: var(--white);
+    color: var(--primary-color);
     font-size: .7em;
     padding-top: 1em;
     margin: 0 0 3em 0.8em;
@@ -602,7 +623,7 @@ body {
 }
 
 .contact__details--item>h2 {
-    color: rgb(233, 233, 233);
+    color: var(--primary-color);
 }
 
 
@@ -714,7 +735,7 @@ body {
     .section__portfolio>p,
     .about--myself>p,
     .about--hobbies>p {
-        color: var(--white);
+        color: var(--primary-color);
         font-size: 16px;
         padding-top: 1em;
         margin: 0 0 0 .8em;
@@ -749,6 +770,7 @@ body {
 
     #amanImg {
         width: 9.5em;
+        /* border-radius: 100px; */
     }
 }
 
@@ -768,12 +790,13 @@ body {
 
     #amanImg {
         width: 9.5em;
+        /* border-radius: 100px; */
     }
 }
 
 @media screen and (max-width: 190px) {
     .studies--list>p {
-        color: #ffffff;
+        color: var(--secondary-color);
         margin: 0 2.7em;
         font-size: 10px;
         opacity: .9;
@@ -794,6 +817,7 @@ body {
 
     #amanImg {
         width: 9.5em;
+        border-radius: 100px;
     }
 
     .hero__intro {
@@ -972,7 +996,7 @@ body {
         align-items: center;
         flex-direction: column;
         width: 13rem;
-        background-color: var(--main-bg);
+        background-color: var(--secondary-color);
         height: 100vh;
         position: fixed;
         lefT: 0;
@@ -999,7 +1023,7 @@ body {
     }
 
     .nav__link>a {
-        color: var(--white);
+        color: var(--primary-color);
     }
 
     .social-icon {
@@ -1076,7 +1100,7 @@ body {
         align-items: center;
         flex-direction: column;
         width: 13rem;
-        background-color: var(--main-bg);
+        background-color: var(--secondary-color);
         height: 100vh;
         position: fixed;
         top: 0;
@@ -1103,7 +1127,7 @@ body {
     }
 
     .nav__link--2>a {
-        color: var(--white);
+        color: var(--primary-color);
     }
 
     .nav__links--2 {
