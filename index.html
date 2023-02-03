@@ -14,14 +14,14 @@
 
     <script defer src="./script/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <link rel="icon" type="image/x-icon" href="./assets/icon.png">
+    <link rel="icon" type="image/x-icon" href="./assets/a_logo2.png">
     <title>Aman Verma | Java Backend Developer</title>
 </head>
 
 <body>
     <!-- big__nav--hidden -->
     <div class="nav-big big__nav--hidden">
-        <div>
+        <div data-tilt>
             <img id="amanImg" src="./assets/a_logo2.png" alt="aman">
         </div>
 
@@ -54,7 +54,7 @@
 
 
     <div class="nav-big--2 big__nav--hidden--2">
-        <div>
+        <div data-tilt>
             <img id="amanImg" src="./assets/Aman.jpg" alt="aman">
         </div>
 
@@ -83,6 +83,10 @@
     </div>
 
 
+    <!-- for styles cursor  -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <!-- --------------------------->
 
 
 
@@ -90,7 +94,7 @@
     <menu>
         <div class="main-navbar">
             <div class="mobile-nav mobile__nav--hidden sticky ">
-                <img src="./assets/icon.png" class="icon__img" alt="aman-signature">
+                <img src="./assets/a_logo2.png" class="icon__img" alt="aman-signature">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
@@ -102,14 +106,14 @@
             <!-- incomplete-->
             <div class="hero--main__hero">
                 <div class="hero__intro content">
-                    <h1>Hello Visitors</h1>
+                    <h1>Hello <span class="span-h1"> Visitors</span> </h1>
                     <!-- <p>How you doing!</p> -->
                     <!-- <h1>..I'm <span><img src="./assets/Aman-white.png" class="signature__img" alt=""></span>,</h1> -->
-                    <h1>I'm Aman Verma</h1>
+                    <h1 data-tilt>I'm Aman Verma</h1>
                     <h2 class="text"><span class="multitext"></span></h2>
                 </div>
 
-                <div id="hero--image__main">
+                <div id="hero--image__main" data-tilt>
                     <img src=".//assets/Aman.jpg" alt="aman image">
                 </div>
             </div>
@@ -232,58 +236,58 @@
                 <h2>My Skills</h2>
                 <div class="about--container">
                     <div class="about--skillicon">
-                        <div class="icon__container">
+                        <div class="icon__container" data-tilt>
                             <img src="./assets/skil__Icon/HTML5_logo_and_wordmark.svg">
                             <h2>HTML</h2>
                         </div>
-                        
-                        <div class="icon__container">
+
+                        <div class="icon__container" data-tilt>
                             <img src="./assets/skil__Icon/CSS_logo_and_wordmark.svg">
                             <h2>CSS</h2>
                         </div>
 
-                        <div class="icon__container">
+                        <div class="icon__container" data-tilt>
                             <img src="./assets/skil__Icon/icons8-javascript.svg">
                             <h2>JavaScript</h2>
                         </div>
 
-                        <div class="icon__container">
+                        <div class="icon__container" data-tilt>
                             <img src="./assets/skil__Icon/java-svgrepo-com.svg">
                             <h2>Java</h2>
                         </div>
 
-                        <div class="icon__container">
+                        <div class="icon__container" data-tilt>
                             <img src="./assets/skil__Icon/mysqlworkbench_102952.svg">
                             <h2>My SQL</h2>
                         </div>
 
-                        <div class="icon__container">
+                        <div class="icon__container" data-tilt>
                             <img src="./assets/skil__Icon/spring-icon.svg">
                             <h2>Spring</h2>
                         </div>
 
-                        <div class="icon__container">
+                        <div class="icon__container" data-tilt>
                             <img src="./assets/skil__Icon/spring-boot-logo.png">
                             <h2>Spring Boot</h2>
                         </div>
 
-                        <div class="icon__container">
+                        <div class="icon__container" data-tilt>
                             <img src="./assets/skil__Icon/Amazon Web Services.svg">
                             <h2>AWS</h2>
                         </div>
-                        <div class="icon__container">
+                        <div class="icon__container" data-tilt>
                             <img src="./assets/skil__Icon/hibernate_logo_icon_171004.svg">
                             <h2>Hibernet</h2>
                         </div>
-                        <div class="icon__container">
+                        <div class="icon__container" data-tilt>
                             <img src="./assets/skil__Icon/Git logo.svg">
                             <h2>Git</h2>
                         </div>
-                        <div class="icon__container">
+                        <div class="icon__container" data-tilt>
                             <img src="./assets/skil__Icon/github.svg">
                             <h2>Github</h2>
                         </div>
-                        <div class="icon__container">
+                        <div class="icon__container" data-tilt>
                             <img src="./assets/skil__Icon/Visual Studio Code.svg">
                             <h2>VsCode</h2>
                         </div>
@@ -357,49 +361,36 @@
                 <h1>My Statistics</h1>
                 <div class="line"></div>
 
-                <div>
+                <div class="github-container">
                     <p align="left">
 
-                    <div class="about--statistics" style="margin-top: 10px;">
+                    <div class="github-first-container" style="margin-top: 10px;">
                         <a href="https://github.com/amanvermai30" style="text-decoration: none; ">
-                            <img width="48%"
+                            <img class="github-first-img"
                                 src="https://github-readme-streak-stats.herokuapp.com?user=amanvermai30&theme=algolia" />
-                            <img width="48%"
+                            <img class="github-first-img"
                                 src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=amanvermai30&layout=compact&langs_count=8&theme=algolia" />
                     </div>
 
-
-                    <p class="github-stats" style="color: white; text-decoration: none;">
-                        <span style="color: white;"> github </span> contribution
+                    </a>
                     </p>
 
-                    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-                    <!--  CSS link-->
-                    <link rel="stylesheet"
-                        href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-                    <section class="github-stats section" id="github-stats">
-                        <div class="github-images">
-                            <!-- <img
-                                        src="https://github-readme-streak-stats.herokuapp.com/?user=amanvermai30&theme=default" /> -->
-                        </div>
+                    <div class="github-calendar">
+                        <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">   
+                        </script>
+                        <!--  CSS link-->
+                        <link rel="stylesheet"
+                            href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+
+                        <div class="calendar"> </div>
                         <!-- calendar. -->
-                        <div class="calendar">
-                            <!-- Loading stuff --> Loading the data just for you.
-                        </div>
-                        <script>       GitHubCalendar(".calendar", "amanvermai30");       //  responsive functionality       GitHubCalendar(".calendar", "Vedpaswan01", { responsive: true });     </script>
-                        </a>
-                        </p>
+                        <script>  GitHubCalendar(".calendar", "amanvermai30"); </script>
+
+                    </div>
 
                 </div>
 
             </div>
-
-
-
-
-
-
-
 
 
         </section>
@@ -464,6 +455,8 @@
 
         </footer>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
 </body>
 
 </html>
