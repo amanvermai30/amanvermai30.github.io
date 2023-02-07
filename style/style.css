@@ -1236,8 +1236,26 @@ body {
     margin-top: 2em;
 
   }
-  /* .github-calendar {
-    border: 2px solid red;
+  .github-calendar {
+   
     height: 200px;
-  } */
+    width: 92%;
+    margin-top: 2%;
+    /* //border: 2px solid red; */
+    
+    margin: 0 auto; /* center the element horizontally */
+    margin-top: 2%;
+    
+    
+  }
 
+
+ 
+
+  /* #cala{
+
+    align-self: center;
+    border: 2px solid red;
+    align-items: center;
+  } */
+ 
