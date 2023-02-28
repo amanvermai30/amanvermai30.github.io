@@ -71,21 +71,21 @@ allSection.forEach((section) => {
 
 
 // revealing view&github link
-appPortfolioList.forEach((e) => {
-    e.addEventListener('mouseover', (e) => {
-        e.preventDefault();
-        if (e.currentTarget.lastElementChild.classList.contains('hidden')) {
-            e.currentTarget.lastElementChild.classList.remove('hidden');
-        }
-    })
+// appPortfolioList.forEach((e) => {
+//     e.addEventListener('mouseover', (e) => {
+//         e.preventDefault();
+//         if (e.currentTarget.lastElementChild.classList.contains('hidden')) {
+//             e.currentTarget.lastElementChild.classList.remove('hidden');
+//         }
+//     })
 
-    e.addEventListener('mouseout', (e) => {
-        e.preventDefault();
-        if (!e.currentTarget.lastElementChild.classList.contains('hidden')) {
-            e.currentTarget.lastElementChild.classList.add('hidden');
-        }
-    })
-})
+//     e.addEventListener('mouseout', (e) => {
+//         e.preventDefault();
+//         if (!e.currentTarget.lastElementChild.classList.contains('hidden')) {
+//             e.currentTarget.lastElementChild.classList.add('hidden');
+//         }
+//     })
+// })
 
 
 
@@ -146,4 +146,10 @@ document.addEventListener("mousemove",function(e){
   cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
 });
 
+
+function downloadResume() {
+
+    window.open("https://drive.google.com/file/d/16xCZ4u51wHZtHW56jTAbwq9QU7l9EEnT/view?usp=sharing","_blank")
+
+}
 
