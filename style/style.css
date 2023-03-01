@@ -822,6 +822,18 @@ body {
         /* border-radius: 100px; */
     }
 }
+@media screen and (min-width: 350px) {
+
+    .hero__btn {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2em;
+        justify-content: space-around;
+        align-content: space-between;
+        align-items: center;
+        margin-top: 7em;
+    }
+}
 
 @media screen and (max-width: 190px) {
     .studies--list>p {
