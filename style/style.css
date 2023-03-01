@@ -376,14 +376,14 @@ body {
 
 .about--skillicon {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
-    gap: 100px;
+    gap: 3em;
     width: 70%;
 }
 
 .icon__container>img {
-    width: 9em;
+    width: 6em;
 }
 
 .icon__container {
@@ -401,7 +401,11 @@ body {
 
 }
 
-.icon__container h2 {
+.icon__container h3 {
+    color: var(--primary-color);
+}
+
+.teck-stack {
     color: var(--primary-color);
 }
 
@@ -629,7 +633,7 @@ body {
 }
 
 .contact__details {
-    padding-top: 5em;
+    /* padding-top: 2em; */
 }
 
 .contact__details--item {
@@ -970,26 +974,29 @@ body {
 /* skill
  */
 
- @media screen and (max-width: 1050px) {
+@media screen and (max-width: 1050px) {
     .about--skillicon {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
+
 @media screen and (max-width: 530px) {
     .about--skillicon {
-        grid-template-columns: repeat(2,100px);
+        grid-template-columns: repeat(2, 100px);
         width: 80%;
         justify-content: center;
         row-gap: 30px;
 
     }
-    .icon__container{
+
+    .icon__container {
         margin: auto;
     }
-    .icon__container > img{
+
+    .icon__container>img {
 
         width: 100px;
-    }   
+    }
 
 }
 
@@ -1184,7 +1191,8 @@ body {
     .nav__links--2 {
         list-style-type: none;
     }
-    .nav__links--2 >li > a{
+
+    .nav__links--2>li>a {
         text-decoration: none;
     }
 
@@ -1292,7 +1300,8 @@ body {
     margin-top: 1em;
 
 }
-.calendar{
+
+.calendar {
     min-height: 100px !important;
 }
 
@@ -1320,6 +1329,10 @@ body {
         font-size: .9em;
         color: var(--primary-color);
         padding: 0.8em 0.7em;
+    }
+
+    .contact__details--item>h2 {
+        font-size: 1.3em;
     }
 
 }
