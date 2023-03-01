@@ -1062,7 +1062,7 @@ body {
         right: auto;
         bottom: 0;
         z-index: 9;
-        padding-top: 2em;
+        padding-top: 0em;
     }
 
     .nav {
